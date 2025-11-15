@@ -1,0 +1,50 @@
+/* Fullscreen helpers (vendor prefixes kept for compatibility) */
+:-ms-fullscreen { width: 100%; height: 100%; }
+:-webkit-full-screen { width: 100%; height: 100%; }
+:fullscreen { width: 100%; height: 100%; }
+:-moz-full-screen { width: 100%; height: 100%; }
+:-o-full-screen { width: 100%; height: 100%; }
+
+:root {
+  --primary-color: #2a6cb2;
+  --secondary-color: #ff4081;
+  --background-color: rgb(46, 36, 25);
+  --text-color: #212121;
+  --font-family: 'Helvetica Neue', Arial, sans-serif;
+  --primary-color-dark: #003d99;
+  --accent-color: #ff4081;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Simple content container */
+div {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1.25rem;
+  background: rgba(240, 241, 241, 0.911);
+  border-radius: 8px;
+}
+h1 {
+  color: rgb(238, 5, 5);
+  margin: 0.5rem 0;
+}
+h4 {
+  color: rgb(15, 29, 228);
+  margin: 0.25rem 0;
+}
+h2, h3, h5, h6 {
+  color: rgb(12, 0, 0);
+  margin: 0.25rem 0;
+}
+
+p {
+  color: rgb(8, 0, 0);
+  line-height: 1.6;
+}
