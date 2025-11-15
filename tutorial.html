@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorials</title>
+
+    <!-- Bootstrap CSS (your local file) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Bootstrap Tutorials</a>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#tutorials">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO / WELCOME SECTION -->
+    <section id="home" class="py-5">
+        <div class="container text-center">
+            <h1 class="display-4 mb-3">Welcome to Bootstrap</h1>
+            <h2 class="h4 text-muted mb-4">Learn how to build real websites with Bootstrap 5</h2>
+            <p class="lead">
+                Bootstrap is a powerful CSS framework that helps you create responsive,
+                modern websites quickly using ready-made classes.
+            </p>
+            <a href="#tutorials" class="btn btn-primary btn-lg mt-3">Start Learning</a>
+        </div>
+    </section>
+
+    <!-- TUTORIAL CARDS SECTION -->
+    <section id="tutorials" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="mb-4 text-center">Bootstrap Tutorials</h2>
+            <p class="text-center mb-5">
+                Below are simple topics that introduce you to Bootstrap step by step.
+            </p>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">1. Containers & Grid</h5>
+                            <p class="card-text">
+                                Learn how <code>.container</code>, <code>.row</code> and
+                                <code>.col-*</code> classes help you create responsive layouts.
+                                This is the base of almost every Bootstrap page.
+                            </p>
+                            <span class="badge bg-primary">Beginner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">2. Buttons & Colors</h5>
+                            <p class="card-text">
+                                Use classes like <code>.btn</code>, <code>.btn-primary</code>,
+                                <code>.btn-success</code> and utility color classes to style
+                                actions and links without writing custom CSS.
+                            </p>
+                            <span class="badge bg-success">Practical</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">3. Components</h5>
+                            <p class="card-text">
+                                Discover ready-made components like navbars, cards, alerts,
+                                modals, and forms that make your website look professional
+                                with very little code.
+                            </p>
+                            <span class="badge bg-warning text-dark">Important</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">About These Tutorials</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="mb-3">
+                        These Bootstrap tutorials are designed for beginners who already know
+                        a little bit of HTML and want to make their websites look real and professional,
+                        without writing too much custom CSS.
+                    </p>
+                    <p class="mb-3">
+                        You will learn how to use Bootstrap classes directly in your HTML:
+                        for example <code>.container</code>, <code>.row</code>, <code>.col-4</code>,
+                        <code>.card</code>, <code>.btn</code>, and many more. Your HTML "talks" to
+                        Bootstrap by using these class names.
+                    </p>
+                    <p class="mb-0">
+                        As you practice, you will understand how layouts, spacing, colors and components
+                        work together to create a complete website layout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="mb-4 text-center">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-center mb-4">
+                        This is a simple contact form example using Bootstrap form classes.
+                    </p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Write your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3 bg-dark text-light">
+        <div class="container text-center">
+            <small>&copy; 2025 Bootstrap Tutorials. Built by a Ledama.</small>
+        </div>
+    </footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
