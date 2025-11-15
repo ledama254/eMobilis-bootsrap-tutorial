@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorials</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .sidebar {
+            min-height: 100vh;
+        }
+        .content-box {
+            background: white;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #e1e1e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Bootstrap Tutorials</span>
+        </div>
+    </nav>
+
+
+    <!-- Main Layout -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- LEFT SIDEBAR -->
+            <div class="col-md-3 col-lg-2 bg-white border-end sidebar p-3">
+
+                <h5 class="text-secondary">Menu</h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Introduction</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            Components
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Buttons</a></li>
+                            <li><a class="dropdown-item" href="#">Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Alerts</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                            Layout
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Grid System</a></li>
+                            <li><a class="dropdown-item" href="#">Containers</a></li>
+                            <li><a class="dropdown-item" href="#">Columns</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!-- MAIN CONTENT -->
+            <div class="col-md-6 col-lg-7 p-4">
+
+                <div class="content-box">
+                    <h2>Welcome to Bootstrap</h2>
+                    <p>
+                        Bootstrap is one of the most popular frameworks for building responsive and mobile-first websites.
+                        It provides ready–made CSS classes, components, and layouts that make web development faster and easier.
+                        In this simple tutorial page, we look at how Bootstrap works and how you can start using it to
+                        create clean and professional web pages.
+                    </p>
+                </div>
+
+                <div class="content-box">
+                    <h4>What You Will Learn</h4>
+                    <p>
+                        In these Bootstrap tutorials, you will learn how the grid system works, how to use rows and columns,
+                        and how to build layouts that adjust automatically on different screen sizes. Bootstrap also includes
+                        many reusable UI components like buttons, navbars, dropdowns, cards, and forms.
+                    </p>
+                    <p>
+                        Everything is designed to help beginners and experienced developers build strong and attractive interfaces
+                        without writing everything from scratch.
+                    </p>
+                </div>
+
+                <div class="content-box">
+                    <h4>Why Bootstrap?</h4>
+                    <p>
+                        Bootstrap is easy to learn, widely supported, and works well for both small and large projects.
+                        It also saves time because you don’t need to create every design element manually.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="col-md-3 col-lg-3 p-4">
+                <div class="content-box">
+                    <h6 class="text-secondary">Notes</h6>
+                    <p style="font-size: 14px;">
+                        Remember: Bootstrap uses a 12-column grid layout. When building
+                        a page, think in terms of rows and columns. This structure helps
+                        keep everything clean and aligned.
+                    </p>
+                </div>
+
+                <div class="content-box">
+                    <h6 class="text-secondary">Tips</h6>
+                    <p style="font-size: 14px;">
+                        Always include <code>container</code>, <code>row</code>, and <code>col-</code> classes
+                        when working with Bootstrap layout. It keeps the design responsive.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
