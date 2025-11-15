@@ -39,43 +39,45 @@
     <div class="container-fluid">
         <div class="row">
 
-            <!-- LEFT SIDEBAR -->
-            <div class="col-md-3 col-lg-2 bg-white border-end sidebar p-3">
+           <!-- LEFT SIDEBAR -->
+<div class="col-md-3 col-lg-2 bg-white border-end sidebar p-3">
 
-                <h5 class="text-secondary">Menu</h5>
+    <h5 class="text-secondary">Menu</h5>
 
-                <ul class="nav flex-column">
+    <ul class="nav flex-column">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Introduction</a>
-                    </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#intro">Introduction</a>
+        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                            Components
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Buttons</a></li>
-                            <li><a class="dropdown-item" href="#">Cards</a></li>
-                            <li><a class="dropdown-item" href="#">Alerts</a></li>
-                        </ul>
-                    </li>
+        <!-- COMPONENTS DROPDOWN -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                Components
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#buttons">Bootstrap Buttons</a></li>
+                <li><a class="dropdown-item" href="#cards">Working with Cards</a></li>
+                <li><a class="dropdown-item" href="#alerts">Using Alerts</a></li>
+                <li><a class="dropdown-item" href="#navbar">Navbar Tutorial</a></li>
+            </ul>
+        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                            Layout
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Grid System</a></li>
-                            <li><a class="dropdown-item" href="#">Containers</a></li>
-                            <li><a class="dropdown-item" href="#">Columns</a></li>
-                        </ul>
-                    </li>
+        <!-- LAYOUT DROPDOWN -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                Layout
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#grid">Grid System</a></li>
+                <li><a class="dropdown-item" href="#containers">Containers</a></li>
+                <li><a class="dropdown-item" href="#columns">How Columns Work</a></li>
+                <li><a class="dropdown-item" href="#spacing">Spacing Classes</a></li>
+            </ul>
+        </li>
 
-                </ul>
-            </div>
-
-
+    </ul>
+</div>
             <!-- MAIN CONTENT -->
             <div class="col-md-6 col-lg-7 p-4">
 
@@ -109,7 +111,143 @@
                         It also saves time because you don’t need to create every design element manually.
                     </p>
                 </div>
+                <div class="content-box" id="buttons">
+    <h4>Bootstrap Buttons</h4>
+    <p>
+        Bootstrap comes with several button styles you can use without writing any CSS.
+        The main classes include <code>btn-primary</code>, <code>btn-secondary</code>,
+        <code>btn-success</code>, <code>btn-danger</code>, and more.
+    </p>
 
+    <p>Example:</p>
+    <button class="btn btn-primary btn-sm">Primary</button>
+    <button class="btn btn-success btn-sm">Success</button>
+    <button class="btn btn-outline-dark btn-sm">Outline Dark</button>
+
+    <p>
+        To create a button, simply use:
+        <br>
+        <code>&lt;button class="btn btn-primary"&gt;Click&lt;/button&gt;</code>
+    </p>
+</div>
+<div class="content-box" id="cards">
+    <h4>Working with Cards</h4>
+    <p>
+        Cards are one of the simplest ways to display content in a structured box.
+        You can add images, text, lists, links, and buttons inside a card.
+    </p>
+
+    <div class="card" style="width: 14rem;">
+        <div class="card-body">
+            <h5 class="card-title">Basic Card</h5>
+            <p class="card-text">This is a simple example card using Bootstrap.</p>
+            <a href="#" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+    </div>
+
+    <p>
+        Cards help organize content neatly and are used a lot in dashboards and websites.
+    </p>
+</div>
+<div class="content-box" id="alerts">
+    <h4>Using Alerts</h4>
+    <p>
+        Alerts are simple colored messages used for notifications, warnings, or success messages.
+    </p>
+
+    <div class="alert alert-success">This is a success alert.</div>
+    <div class="alert alert-warning">This is a warning alert.</div>
+    <div class="alert alert-danger">This is a danger alert.</div>
+
+    <p>
+        Alerts use classes like <code>alert-success</code>,
+        <code>alert-info</code>, <code>alert-danger</code>, and more.
+    </p>
+</div>
+<div class="content-box" id="navbar">
+    <h4>Navbar Tutorial</h4>
+    <p>
+        The navbar is one of the most important navigation components in Bootstrap.
+        It supports branding, links, toggles for mobile view, and dropdowns.
+    </p>
+
+    <p>
+        A typical navbar uses:
+    </p>
+    <code>
+        &lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+    </code>
+
+    <p>
+        You can customize it using classes like <code>navbar-light</code>,
+        <code>bg-primary</code>, <code>navbar-expand-lg</code> and more.
+    </p>
+</div>
+<div class="content-box" id="grid">
+    <h4>Bootstrap Grid System</h4>
+    <p>
+        The grid system is the backbone of all Bootstrap layouts. It divides the page
+        into 12 columns. You can combine these to create any layout.
+    </p>
+    <p>Example row with 3 equal columns:</p>
+
+    <div class="row">
+        <div class="col bg-light p-2 border">Column 1</div>
+        <div class="col bg-light p-2 border">Column 2</div>
+        <div class="col bg-light p-2 border">Column 3</div>
+    </div>
+
+    <p>
+        Use classes like <code>col-4</code>, <code>col-md-6</code>, <code>col-lg-3</code>
+        to control size at different screen widths.
+    </p>
+</div>
+<div class="content-box" id="containers">
+    <h4>Bootstrap Containers</h4>
+    <p>
+        Containers help center and limit the width of your content.
+        Bootstrap has three main container types:
+    </p>
+    <ul>
+        <li><code>.container</code> – fixed width</li>
+        <li><code>.container-fluid</code> – full width</li>
+        <li><code>.container-lg</code> – responsive width</li>
+    </ul>
+</div>
+<div class="content-box" id="columns">
+    <h4>How Columns Work</h4>
+    <p>
+        Columns must always be placed inside a row. A full row has 12 units,
+        so you can divide it any way you want.
+    </p>
+
+    <p>Example:</p>
+    <code>
+        &lt;div class="row"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="col-8"&gt;Main&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;div class="col-4"&gt;Side&lt;/div&gt;<br>
+        &lt;/div&gt;
+    </code>
+</div>
+<div class="content-box" id="spacing">
+    <h4>Spacing Classes</h4>
+    <p>
+        Bootstrap spacing classes make it easy to add margin or padding.
+        Use <code>m</code> for margin and <code>p</code> for padding.
+    </p>
+
+    <p>Examples:</p>
+    <ul>
+        <li><code>mt-3</code> → margin-top</li>
+        <li><code>mb-4</code> → margin-bottom</li>
+        <li><code>p-2</code> → padding</li>
+        <li><code>px-4</code> → left & right padding</li>
+    </ul>
+
+    <p>
+        Values go from <code>0</code> to <code>5</code>.
+    </p>
+</div>
             </div>
 
 
